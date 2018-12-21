@@ -1,0 +1,1260 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Create an AWS Waf configuration that blocks GIVT via TAG DC List
+Resources:
+  IPSet0:
+    Properties:
+      IPSetDescriptors:
+        - Type: IPV4
+          Value: 12.50.17.12/32
+        - Type: IPV4
+          Value: 12.178.64.5/32
+        - Type: IPV4
+          Value: 13.59.65.107/32
+        - Type: IPV4
+          Value: 18.205.6.210/32
+        - Type: IPV4
+          Value: 18.205.22.155/32
+        - Type: IPV4
+          Value: 18.207.108.94/32
+        - Type: IPV4
+          Value: 18.207.211.234/32
+        - Type: IPV4
+          Value: 18.207.251.182/32
+        - Type: IPV4
+          Value: 18.215.147.144/32
+        - Type: IPV4
+          Value: 18.215.189.17/32
+        - Type: IPV4
+          Value: 18.234.52.157/32
+        - Type: IPV4
+          Value: 23.19.120.100/32
+        - Type: IPV4
+          Value: 23.22.41.36/32
+        - Type: IPV4
+          Value: 23.23.10.45/32
+        - Type: IPV4
+          Value: 23.251.83.156/32
+        - Type: IPV4
+          Value: 24.4.190.252/32
+        - Type: IPV4
+          Value: 24.13.112.226/32
+        - Type: IPV4
+          Value: 24.34.90.160/32
+        - Type: IPV4
+          Value: 24.49.107.238/32
+        - Type: IPV4
+          Value: 24.56.201.144/32
+        - Type: IPV4
+          Value: 24.75.157.94/32
+        - Type: IPV4
+          Value: 24.99.204.111/32
+        - Type: IPV4
+          Value: 24.107.105.87/32
+        - Type: IPV4
+          Value: 24.111.169.59/32
+        - Type: IPV4
+          Value: 24.119.211.152/32
+        - Type: IPV4
+          Value: 24.125.68.55/32
+        - Type: IPV4
+          Value: 24.128.195.123/32
+        - Type: IPV4
+          Value: 24.147.65.29/32
+        - Type: IPV4
+          Value: 24.163.26.101/32
+        - Type: IPV4
+          Value: 24.187.132.24/32
+        - Type: IPV4
+          Value: 24.192.223.199/32
+        - Type: IPV4
+          Value: 24.198.68.218/32
+        - Type: IPV4
+          Value: 24.209.28.186/32
+        - Type: IPV4
+          Value: 24.237.136.104/32
+        - Type: IPV4
+          Value: 24.243.2.179/32
+        - Type: IPV4
+          Value: 24.243.249.9/32
+        - Type: IPV4
+          Value: 31.13.115.1/32
+        - Type: IPV4
+          Value: 31.13.115.2/31
+        - Type: IPV4
+          Value: 31.13.115.4/31
+        - Type: IPV4
+          Value: 31.13.115.7/32
+        - Type: IPV4
+          Value: 31.13.115.12/30
+        - Type: IPV4
+          Value: 31.13.115.16/31
+        - Type: IPV4
+          Value: 31.13.115.19/32
+        - Type: IPV4
+          Value: 31.13.127.1/32
+        - Type: IPV4
+          Value: 31.13.127.6/31
+        - Type: IPV4
+          Value: 31.13.127.8/32
+        - Type: IPV4
+          Value: 31.13.127.10/32
+        - Type: IPV4
+          Value: 31.13.127.18/31
+        - Type: IPV4
+          Value: 31.13.127.20/32
+        - Type: IPV4
+          Value: 34.198.245.53/32
+        - Type: IPV4
+          Value: 34.200.221.248/32
+        - Type: IPV4
+          Value: 34.200.241.69/32
+        - Type: IPV4
+          Value: 34.201.136.198/32
+        - Type: IPV4
+          Value: 34.203.219.36/32
+        - Type: IPV4
+          Value: 34.215.180.124/32
+        - Type: IPV4
+          Value: 34.219.241.92/32
+        - Type: IPV4
+          Value: 34.221.28.254/32
+        - Type: IPV4
+          Value: 34.224.165.152/32
+        - Type: IPV4
+          Value: 34.227.112.193/32
+        - Type: IPV4
+          Value: 34.231.157.157/32
+        - Type: IPV4
+          Value: 34.231.169.93/32
+        - Type: IPV4
+          Value: 34.232.127.140/32
+        - Type: IPV4
+          Value: 35.132.219.95/32
+        - Type: IPV4
+          Value: 35.153.205.8/32
+        - Type: IPV4
+          Value: 35.172.121.6/32
+        - Type: IPV4
+          Value: 35.172.164.59/32
+        - Type: IPV4
+          Value: 35.173.186.91/32
+        - Type: IPV4
+          Value: 35.211.1.45/32
+        - Type: IPV4
+          Value: 35.211.9.17/32
+        - Type: IPV4
+          Value: 35.211.43.247/32
+        - Type: IPV4
+          Value: 37.59.197.183/32
+        - Type: IPV4
+          Value: 38.32.36.82/32
+        - Type: IPV4
+          Value: 38.93.235.50/32
+        - Type: IPV4
+          Value: 45.22.75.143/32
+        - Type: IPV4
+          Value: 45.36.68.183/32
+        - Type: IPV4
+          Value: 45.37.193.1/32
+        - Type: IPV4
+          Value: 45.50.54.219/32
+        - Type: IPV4
+          Value: 47.13.203.9/32
+        - Type: IPV4
+          Value: 47.14.22.208/32
+        - Type: IPV4
+          Value: 47.33.97.146/32
+        - Type: IPV4
+          Value: 47.41.235.130/32
+        - Type: IPV4
+          Value: 47.42.81.11/32
+        - Type: IPV4
+          Value: 47.135.72.67/32
+        - Type: IPV4
+          Value: 47.149.134.137/32
+        - Type: IPV4
+          Value: 47.152.58.122/32
+        - Type: IPV4
+          Value: 47.187.30.77/32
+        - Type: IPV4
+          Value: 47.189.84.207/32
+        - Type: IPV4
+          Value: 47.189.196.201/32
+        - Type: IPV4
+          Value: 47.205.205.202/32
+        - Type: IPV4
+          Value: 47.216.61.181/32
+        - Type: IPV4
+          Value: 47.218.22.220/32
+        - Type: IPV4
+          Value: 50.27.209.203/32
+        - Type: IPV4
+          Value: 50.37.60.34/32
+        - Type: IPV4
+          Value: 50.79.67.154/32
+        - Type: IPV4
+          Value: 50.91.56.201/32
+        - Type: IPV4
+          Value: 50.126.100.28/32
+        - Type: IPV4
+          Value: 50.200.42.106/32
+        - Type: IPV4
+          Value: 50.241.26.86/32
+        - Type: IPV4
+          Value: 52.3.235.135/32
+        - Type: IPV4
+          Value: 52.12.10.175/32
+        - Type: IPV4
+          Value: 52.44.93.197/32
+        - Type: IPV4
+          Value: 52.203.90.236/32
+        - Type: IPV4
+          Value: 54.71.102.244/32
+        - Type: IPV4
+          Value: 54.80.61.123/32
+        - Type: IPV4
+          Value: 54.84.212.180/32
+        - Type: IPV4
+          Value: 54.91.160.14/32
+        - Type: IPV4
+          Value: 54.144.235.92/32
+        - Type: IPV4
+          Value: 54.156.53.12/32
+        - Type: IPV4
+          Value: 54.156.85.207/32
+        - Type: IPV4
+          Value: 54.158.61.75/32
+        - Type: IPV4
+          Value: 54.159.61.98/32
+        - Type: IPV4
+          Value: 54.159.138.188/32
+        - Type: IPV4
+          Value: 54.160.223.122/32
+        - Type: IPV4
+          Value: 54.161.138.240/32
+        - Type: IPV4
+          Value: 54.166.64.245/32
+        - Type: IPV4
+          Value: 54.166.73.6/32
+        - Type: IPV4
+          Value: 54.173.0.163/32
+        - Type: IPV4
+          Value: 54.174.0.41/32
+        - Type: IPV4
+          Value: 54.175.136.138/32
+        - Type: IPV4
+          Value: 54.188.252.94/32
+        - Type: IPV4
+          Value: 54.191.206.217/32
+        - Type: IPV4
+          Value: 54.196.18.215/32
+        - Type: IPV4
+          Value: 54.211.65.178/32
+        - Type: IPV4
+          Value: 54.226.10.200/32
+        - Type: IPV4
+          Value: 54.234.241.222/32
+        - Type: IPV4
+          Value: 54.237.204.14/32
+        - Type: IPV4
+          Value: 54.243.24.161/32
+        - Type: IPV4
+          Value: 64.130.147.170/32
+        - Type: IPV4
+          Value: 64.190.117.212/32
+        - Type: IPV4
+          Value: 64.233.172.4/32
+        - Type: IPV4
+          Value: 64.233.172.20/32
+        - Type: IPV4
+          Value: 64.233.172.22/32
+        - Type: IPV4
+          Value: 64.233.172.24/32
+        - Type: IPV4
+          Value: 65.28.161.249/32
+        - Type: IPV4
+          Value: 65.57.245.11/32
+        - Type: IPV4
+          Value: 65.79.204.222/32
+        - Type: IPV4
+          Value: 65.96.36.144/32
+        - Type: IPV4
+          Value: 65.188.37.163/32
+        - Type: IPV4
+          Value: 65.190.85.163/32
+        - Type: IPV4
+          Value: 66.4.78.10/32
+        - Type: IPV4
+          Value: 66.8.170.101/32
+        - Type: IPV4
+          Value: 66.23.202.58/32
+        - Type: IPV4
+          Value: 66.24.212.63/32
+        - Type: IPV4
+          Value: 66.42.98.20/32
+        - Type: IPV4
+          Value: 66.56.37.68/32
+        - Type: IPV4
+          Value: 66.69.196.151/32
+        - Type: IPV4
+          Value: 66.87.118.170/32
+        - Type: IPV4
+          Value: 66.87.152.171/32
+        - Type: IPV4
+          Value: 66.102.7.140/32
+        - Type: IPV4
+          Value: 66.102.7.142/32
+        - Type: IPV4
+          Value: 66.102.7.144/32
+        - Type: IPV4
+          Value: 66.102.7.232/32
+        - Type: IPV4
+          Value: 66.102.7.234/32
+        - Type: IPV4
+          Value: 66.102.8.46/32
+        - Type: IPV4
+          Value: 66.102.8.148/32
+        - Type: IPV4
+          Value: 66.102.8.150/32
+        - Type: IPV4
+          Value: 66.102.8.152/32
+        - Type: IPV4
+          Value: 66.102.8.174/32
+        - Type: IPV4
+          Value: 66.162.182.118/32
+        - Type: IPV4
+          Value: 66.176.253.154/32
+        - Type: IPV4
+          Value: 66.177.216.145/32
+        - Type: IPV4
+          Value: 66.189.157.209/32
+        - Type: IPV4
+          Value: 66.220.149.1/32
+        - Type: IPV4
+          Value: 66.220.149.9/32
+        - Type: IPV4
+          Value: 66.220.149.10/31
+        - Type: IPV4
+          Value: 66.220.149.13/32
+        - Type: IPV4
+          Value: 66.220.149.15/32
+        - Type: IPV4
+          Value: 66.220.149.17/32
+        - Type: IPV4
+          Value: 66.220.149.27/32
+        - Type: IPV4
+          Value: 66.220.149.31/32
+        - Type: IPV4
+          Value: 66.220.149.34/31
+        - Type: IPV4
+          Value: 66.220.149.37/32
+        - Type: IPV4
+          Value: 66.220.149.38/31
+        - Type: IPV4
+          Value: 66.220.149.42/32
+        - Type: IPV4
+          Value: 66.249.83.20/32
+        - Type: IPV4
+          Value: 66.249.83.22/32
+        - Type: IPV4
+          Value: 66.249.83.24/32
+        - Type: IPV4
+          Value: 66.249.83.46/32
+        - Type: IPV4
+          Value: 66.249.83.48/32
+        - Type: IPV4
+          Value: 66.249.83.50/32
+        - Type: IPV4
+          Value: 66.249.88.2/32
+        - Type: IPV4
+          Value: 66.249.88.5/32
+        - Type: IPV4
+          Value: 66.249.88.8/32
+        - Type: IPV4
+          Value: 66.249.88.180/32
+        - Type: IPV4
+          Value: 66.249.88.182/32
+        - Type: IPV4
+          Value: 66.249.88.184/32
+        - Type: IPV4
+          Value: 67.8.231.49/32
+        - Type: IPV4
+          Value: 67.85.184.114/32
+        - Type: IPV4
+          Value: 67.85.210.79/32
+        - Type: IPV4
+          Value: 67.143.128.180/32
+        - Type: IPV4
+          Value: 67.160.91.78/32
+        - Type: IPV4
+          Value: 67.166.164.192/32
+        - Type: IPV4
+          Value: 67.169.191.245/32
+        - Type: IPV4
+          Value: 67.182.169.228/32
+        - Type: IPV4
+          Value: 67.246.106.28/32
+        - Type: IPV4
+          Value: 67.255.52.124/32
+        - Type: IPV4
+          Value: 68.0.32.199/32
+        - Type: IPV4
+          Value: 68.10.192.63/32
+        - Type: IPV4
+          Value: 68.43.133.178/32
+        - Type: IPV4
+          Value: 68.43.143.120/32
+        - Type: IPV4
+          Value: 68.55.22.218/32
+        - Type: IPV4
+          Value: 68.71.78.19/32
+        - Type: IPV4
+          Value: 68.95.62.170/32
+        - Type: IPV4
+          Value: 68.98.198.64/32
+        - Type: IPV4
+          Value: 68.103.247.152/32
+        - Type: IPV4
+          Value: 68.109.57.48/32
+        - Type: IPV4
+          Value: 68.109.226.59/32
+        - Type: IPV4
+          Value: 68.115.2.104/32
+        - Type: IPV4
+          Value: 68.173.245.140/32
+        - Type: IPV4
+          Value: 68.174.170.38/32
+        - Type: IPV4
+          Value: 68.186.207.133/32
+        - Type: IPV4
+          Value: 68.194.169.107/32
+        - Type: IPV4
+          Value: 68.207.105.188/32
+        - Type: IPV4
+          Value: 68.224.81.190/32
+        - Type: IPV4
+          Value: 68.231.75.65/32
+        - Type: IPV4
+          Value: 69.5.132.38/32
+        - Type: IPV4
+          Value: 69.29.24.36/32
+        - Type: IPV4
+          Value: 69.61.213.143/32
+        - Type: IPV4
+          Value: 69.92.248.57/32
+        - Type: IPV4
+          Value: 69.109.135.32/32
+        - Type: IPV4
+          Value: 69.138.49.224/32
+        - Type: IPV4
+          Value: 69.145.144.142/32
+        - Type: IPV4
+          Value: 69.180.87.154/32
+        - Type: IPV4
+          Value: 69.203.71.132/32
+        - Type: IPV4
+          Value: 69.243.35.21/32
+        - Type: IPV4
+          Value: 70.15.24.149/32
+        - Type: IPV4
+          Value: 70.39.13.191/32
+        - Type: IPV4
+          Value: 70.177.91.147/32
+        - Type: IPV4
+          Value: 70.189.225.73/32
+        - Type: IPV4
+          Value: 71.11.116.184/32
+        - Type: IPV4
+          Value: 71.15.28.170/32
+        - Type: IPV4
+          Value: 71.38.72.144/32
+        - Type: IPV4
+          Value: 71.38.252.202/32
+        - Type: IPV4
+          Value: 71.52.234.62/32
+        - Type: IPV4
+          Value: 71.57.220.92/32
+        - Type: IPV4
+          Value: 71.62.227.180/32
+        - Type: IPV4
+          Value: 71.82.41.60/32
+        - Type: IPV4
+          Value: 71.90.52.181/32
+        - Type: IPV4
+          Value: 71.94.128.204/32
+        - Type: IPV4
+          Value: 71.126.141.119/32
+        - Type: IPV4
+          Value: 71.143.230.205/32
+        - Type: IPV4
+          Value: 71.150.159.158/32
+        - Type: IPV4
+          Value: 71.191.166.159/32
+        - Type: IPV4
+          Value: 71.199.173.32/32
+        - Type: IPV4
+          Value: 71.210.86.218/32
+        - Type: IPV4
+          Value: 71.214.192.17/32
+        - Type: IPV4
+          Value: 71.224.28.12/32
+        - Type: IPV4
+          Value: 71.226.254.155/32
+        - Type: IPV4
+          Value: 71.235.86.253/32
+        - Type: IPV4
+          Value: 71.237.75.99/32
+        - Type: IPV4
+          Value: 71.237.83.122/32
+        - Type: IPV4
+          Value: 72.30.14.86/32
+        - Type: IPV4
+          Value: 72.30.14.101/32
+        - Type: IPV4
+          Value: 72.51.252.234/32
+        - Type: IPV4
+          Value: 72.83.88.149/32
+        - Type: IPV4
+          Value: 72.86.41.225/32
+        - Type: IPV4
+          Value: 72.88.199.19/32
+        - Type: IPV4
+          Value: 72.92.229.45/32
+        - Type: IPV4
+          Value: 72.130.208.76/32
+        - Type: IPV4
+          Value: 72.181.188.36/32
+        - Type: IPV4
+          Value: 72.183.235.193/32
+        - Type: IPV4
+          Value: 72.188.81.237/32
+        - Type: IPV4
+          Value: 72.201.217.78/32
+        - Type: IPV4
+          Value: 72.220.122.87/32
+        - Type: IPV4
+          Value: 73.0.216.216/32
+        - Type: IPV4
+          Value: 73.45.103.234/32
+        - Type: IPV4
+          Value: 73.47.115.225/32
+        - Type: IPV4
+          Value: 73.66.218.160/32
+        - Type: IPV4
+          Value: 73.69.236.238/32
+        - Type: IPV4
+          Value: 73.95.133.110/32
+        - Type: IPV4
+          Value: 73.96.114.226/32
+        - Type: IPV4
+          Value: 73.106.78.164/32
+        - Type: IPV4
+          Value: 73.106.79.34/32
+        - Type: IPV4
+          Value: 73.110.34.158/32
+        - Type: IPV4
+          Value: 73.114.17.12/32
+        - Type: IPV4
+          Value: 73.114.59.209/32
+        - Type: IPV4
+          Value: 73.114.80.147/32
+        - Type: IPV4
+          Value: 73.120.232.31/32
+        - Type: IPV4
+          Value: 73.124.249.109/32
+        - Type: IPV4
+          Value: 73.133.12.46/32
+        - Type: IPV4
+          Value: 73.138.130.51/32
+        - Type: IPV4
+          Value: 73.138.141.36/32
+        - Type: IPV4
+          Value: 73.144.141.187/32
+        - Type: IPV4
+          Value: 73.145.40.157/32
+        - Type: IPV4
+          Value: 73.154.52.111/32
+        - Type: IPV4
+          Value: 73.163.210.63/32
+        - Type: IPV4
+          Value: 73.198.9.196/32
+        - Type: IPV4
+          Value: 73.216.83.123/32
+        - Type: IPV4
+          Value: 73.227.238.217/32
+        - Type: IPV4
+          Value: 73.235.250.162/32
+        - Type: IPV4
+          Value: 74.6.168.179/32
+        - Type: IPV4
+          Value: 74.6.168.200/32
+        - Type: IPV4
+          Value: 74.6.168.241/32
+        - Type: IPV4
+          Value: 74.103.246.95/32
+        - Type: IPV4
+          Value: 74.108.0.146/32
+        - Type: IPV4
+          Value: 74.128.109.170/32
+        - Type: IPV4
+          Value: 74.128.148.142/32
+        - Type: IPV4
+          Value: 74.129.48.6/32
+        - Type: IPV4
+          Value: 74.192.117.116/32
+        - Type: IPV4
+          Value: 75.88.167.5/32
+        - Type: IPV4
+          Value: 75.108.36.69/32
+        - Type: IPV4
+          Value: 75.109.43.122/32
+        - Type: IPV4
+          Value: 75.115.17.73/32
+        - Type: IPV4
+          Value: 75.118.214.27/32
+        - Type: IPV4
+          Value: 75.129.141.230/32
+        - Type: IPV4
+          Value: 75.138.209.221/32
+        - Type: IPV4
+          Value: 75.144.19.69/32
+        - Type: IPV4
+          Value: 75.163.225.192/32
+        - Type: IPV4
+          Value: 75.165.88.159/32
+        - Type: IPV4
+          Value: 75.166.163.237/32
+        - Type: IPV4
+          Value: 75.174.94.123/32
+        - Type: IPV4
+          Value: 75.176.97.87/32
+        - Type: IPV4
+          Value: 75.179.11.247/32
+        - Type: IPV4
+          Value: 75.188.67.4/32
+        - Type: IPV4
+          Value: 75.190.66.16/32
+        - Type: IPV4
+          Value: 76.7.185.228/32
+        - Type: IPV4
+          Value: 76.23.136.197/32
+        - Type: IPV4
+          Value: 76.28.46.255/32
+        - Type: IPV4
+          Value: 76.29.83.213/32
+        - Type: IPV4
+          Value: 76.72.33.108/32
+        - Type: IPV4
+          Value: 76.109.186.253/32
+        - Type: IPV4
+          Value: 76.111.126.13/32
+        - Type: IPV4
+          Value: 76.168.40.176/32
+        - Type: IPV4
+          Value: 76.180.83.91/32
+        - Type: IPV4
+          Value: 76.187.231.179/32
+        - Type: IPV4
+          Value: 76.188.235.197/32
+        - Type: IPV4
+          Value: 76.200.89.132/32
+        - Type: IPV4
+          Value: 76.236.29.197/32
+        - Type: IPV4
+          Value: 96.3.107.105/32
+        - Type: IPV4
+          Value: 96.33.65.220/32
+        - Type: IPV4
+          Value: 96.47.87.37/32
+        - Type: IPV4
+          Value: 96.47.87.38/32
+        - Type: IPV4
+          Value: 96.235.194.181/32
+        - Type: IPV4
+          Value: 97.65.109.131/32
+        - Type: IPV4
+          Value: 97.95.212.33/32
+        - Type: IPV4
+          Value: 97.97.12.7/32
+        - Type: IPV4
+          Value: 97.99.159.179/32
+        - Type: IPV4
+          Value: 98.4.237.228/32
+        - Type: IPV4
+          Value: 98.10.99.213/32
+        - Type: IPV4
+          Value: 98.140.204.158/32
+        - Type: IPV4
+          Value: 98.160.232.212/32
+        - Type: IPV4
+          Value: 98.177.147.213/32
+        - Type: IPV4
+          Value: 98.177.188.162/32
+        - Type: IPV4
+          Value: 98.181.172.217/32
+        - Type: IPV4
+          Value: 98.198.77.53/32
+        - Type: IPV4
+          Value: 98.199.62.114/32
+        - Type: IPV4
+          Value: 98.200.15.52/32
+        - Type: IPV4
+          Value: 98.220.131.6/32
+        - Type: IPV4
+          Value: 98.223.16.234/32
+        - Type: IPV4
+          Value: 98.226.76.0/32
+        - Type: IPV4
+          Value: 98.230.26.75/32
+        - Type: IPV4
+          Value: 98.230.131.110/32
+        - Type: IPV4
+          Value: 98.232.192.12/32
+        - Type: IPV4
+          Value: 98.238.221.252/32
+        - Type: IPV4
+          Value: 98.243.90.56/32
+        - Type: IPV4
+          Value: 99.14.141.70/32
+        - Type: IPV4
+          Value: 99.33.195.246/32
+        - Type: IPV4
+          Value: 99.75.21.32/32
+        - Type: IPV4
+          Value: 99.89.111.108/32
+        - Type: IPV4
+          Value: 99.92.61.85/32
+        - Type: IPV4
+          Value: 99.95.251.243/32
+        - Type: IPV4
+          Value: 99.109.61.160/32
+        - Type: IPV4
+          Value: 99.110.229.214/32
+        - Type: IPV4
+          Value: 99.111.235.12/32
+        - Type: IPV4
+          Value: 99.140.61.100/32
+        - Type: IPV4
+          Value: 99.188.27.113/32
+        - Type: IPV4
+          Value: 99.189.187.52/32
+        - Type: IPV4
+          Value: 99.197.217.104/32
+        - Type: IPV4
+          Value: 99.203.1.78/32
+        - Type: IPV4
+          Value: 99.203.28.208/32
+        - Type: IPV4
+          Value: 99.203.90.3/32
+        - Type: IPV4
+          Value: 99.203.155.138/32
+        - Type: IPV4
+          Value: 100.2.140.223/32
+        - Type: IPV4
+          Value: 100.10.56.137/32
+        - Type: IPV4
+          Value: 100.11.41.114/32
+        - Type: IPV4
+          Value: 100.33.137.178/32
+        - Type: IPV4
+          Value: 100.36.145.219/32
+        - Type: IPV4
+          Value: 100.38.85.82/32
+        - Type: IPV4
+          Value: 104.10.33.68/32
+        - Type: IPV4
+          Value: 104.32.38.108/32
+        - Type: IPV4
+          Value: 104.49.245.160/32
+        - Type: IPV4
+          Value: 104.55.85.19/32
+        - Type: IPV4
+          Value: 104.129.192.81/32
+        - Type: IPV4
+          Value: 104.129.194.74/32
+        - Type: IPV4
+          Value: 104.129.204.131/32
+        - Type: IPV4
+          Value: 104.159.255.105/32
+        - Type: IPV4
+          Value: 104.174.84.99/32
+        - Type: IPV4
+          Value: 104.176.175.138/32
+        - Type: IPV4
+          Value: 104.192.128.41/32
+        - Type: IPV4
+          Value: 104.218.69.192/32
+        - Type: IPV4
+          Value: 107.5.249.179/32
+        - Type: IPV4
+          Value: 107.21.179.31/32
+        - Type: IPV4
+          Value: 107.77.161.7/32
+        - Type: IPV4
+          Value: 107.77.169.2/32
+        - Type: IPV4
+          Value: 107.77.169.12/32
+        - Type: IPV4
+          Value: 107.77.198.37/32
+        - Type: IPV4
+          Value: 107.77.198.94/32
+        - Type: IPV4
+          Value: 107.77.198.172/32
+        - Type: IPV4
+          Value: 107.77.198.175/32
+        - Type: IPV4
+          Value: 107.77.198.201/32
+        - Type: IPV4
+          Value: 107.77.200.64/32
+        - Type: IPV4
+          Value: 107.77.202.140/32
+        - Type: IPV4
+          Value: 107.77.202.201/32
+        - Type: IPV4
+          Value: 107.77.221.72/32
+        - Type: IPV4
+          Value: 107.77.221.152/32
+        - Type: IPV4
+          Value: 107.77.225.58/32
+        - Type: IPV4
+          Value: 107.77.226.209/32
+        - Type: IPV4
+          Value: 107.77.237.34/32
+        - Type: IPV4
+          Value: 107.77.237.65/32
+        - Type: IPV4
+          Value: 107.77.237.72/32
+        - Type: IPV4
+          Value: 107.77.237.85/32
+        - Type: IPV4
+          Value: 107.77.245.4/32
+        - Type: IPV4
+          Value: 107.77.249.2/32
+        - Type: IPV4
+          Value: 107.77.253.7/32
+        - Type: IPV4
+          Value: 107.139.249.165/32
+        - Type: IPV4
+          Value: 107.141.232.128/32
+        - Type: IPV4
+          Value: 107.141.237.239/32
+        - Type: IPV4
+          Value: 107.146.230.249/32
+        - Type: IPV4
+          Value: 107.185.5.204/32
+        - Type: IPV4
+          Value: 107.207.74.9/32
+        - Type: IPV4
+          Value: 107.242.117.3/32
+        - Type: IPV4
+          Value: 107.242.117.4/32
+        - Type: IPV4
+          Value: 108.2.193.136/32
+        - Type: IPV4
+          Value: 108.28.186.149/32
+        - Type: IPV4
+          Value: 108.29.148.7/32
+        - Type: IPV4
+          Value: 108.35.196.144/32
+        - Type: IPV4
+          Value: 108.56.146.165/32
+        - Type: IPV4
+          Value: 108.75.242.160/32
+        - Type: IPV4
+          Value: 108.185.30.227/32
+        - Type: IPV4
+          Value: 108.195.6.248/32
+        - Type: IPV4
+          Value: 108.200.196.216/32
+        - Type: IPV4
+          Value: 108.202.84.125/32
+        - Type: IPV4
+          Value: 108.208.191.73/32
+        - Type: IPV4
+          Value: 108.214.56.46/32
+        - Type: IPV4
+          Value: 108.221.172.183/32
+        - Type: IPV4
+          Value: 108.228.105.98/32
+        - Type: IPV4
+          Value: 108.245.65.8/32
+        - Type: IPV4
+          Value: 108.251.248.201/32
+        - Type: IPV4
+          Value: 135.26.171.220/32
+        - Type: IPV4
+          Value: 144.163.201.41/32
+        - Type: IPV4
+          Value: 150.250.5.26/32
+        - Type: IPV4
+          Value: 152.26.88.76/32
+        - Type: IPV4
+          Value: 155.186.37.90/32
+        - Type: IPV4
+          Value: 158.106.214.150/32
+        - Type: IPV4
+          Value: 159.118.211.158/32
+        - Type: IPV4
+          Value: 160.3.4.107/32
+        - Type: IPV4
+          Value: 160.3.50.152/32
+        - Type: IPV4
+          Value: 162.104.126.75/32
+        - Type: IPV4
+          Value: 162.200.148.152/32
+        - Type: IPV4
+          Value: 162.204.121.64/32
+        - Type: IPV4
+          Value: 162.205.24.19/32
+        - Type: IPV4
+          Value: 162.228.67.240/32
+        - Type: IPV4
+          Value: 162.228.76.195/32
+        - Type: IPV4
+          Value: 162.234.24.197/32
+        - Type: IPV4
+          Value: 162.243.24.100/32
+        - Type: IPV4
+          Value: 162.243.37.153/32
+        - Type: IPV4
+          Value: 164.113.94.5/32
+        - Type: IPV4
+          Value: 165.227.110.192/32
+        - Type: IPV4
+          Value: 166.182.85.25/32
+        - Type: IPV4
+          Value: 166.182.243.16/32
+        - Type: IPV4
+          Value: 166.216.159.128/32
+        - Type: IPV4
+          Value: 166.248.164.239/32
+        - Type: IPV4
+          Value: 168.10.137.2/32
+        - Type: IPV4
+          Value: 170.72.62.252/32
+        - Type: IPV4
+          Value: 172.10.58.121/32
+        - Type: IPV4
+          Value: 172.56.4.229/32
+        - Type: IPV4
+          Value: 172.56.6.18/32
+        - Type: IPV4
+          Value: 172.56.6.86/32
+        - Type: IPV4
+          Value: 172.56.7.179/32
+        - Type: IPV4
+          Value: 172.56.10.145/32
+        - Type: IPV4
+          Value: 172.56.13.211/32
+        - Type: IPV4
+          Value: 172.56.22.19/32
+        - Type: IPV4
+          Value: 172.56.26.37/32
+        - Type: IPV4
+          Value: 172.56.35.30/32
+        - Type: IPV4
+          Value: 172.56.35.63/32
+        - Type: IPV4
+          Value: 172.58.4.230/32
+        - Type: IPV4
+          Value: 172.58.11.7/32
+        - Type: IPV4
+          Value: 172.58.11.67/32
+        - Type: IPV4
+          Value: 172.58.12.35/32
+        - Type: IPV4
+          Value: 172.58.14.132/32
+        - Type: IPV4
+          Value: 172.58.15.105/32
+        - Type: IPV4
+          Value: 172.58.21.187/32
+        - Type: IPV4
+          Value: 172.58.23.240/32
+        - Type: IPV4
+          Value: 172.58.23.250/32
+        - Type: IPV4
+          Value: 172.58.24.133/32
+        - Type: IPV4
+          Value: 172.58.29.31/32
+        - Type: IPV4
+          Value: 172.58.37.30/32
+        - Type: IPV4
+          Value: 172.58.41.130/32
+        - Type: IPV4
+          Value: 172.58.43.70/32
+        - Type: IPV4
+          Value: 172.58.67.11/32
+        - Type: IPV4
+          Value: 172.58.67.253/32
+        - Type: IPV4
+          Value: 172.58.96.9/32
+        - Type: IPV4
+          Value: 172.58.96.43/32
+        - Type: IPV4
+          Value: 172.58.97.158/32
+        - Type: IPV4
+          Value: 172.58.102.224/32
+        - Type: IPV4
+          Value: 172.58.104.75/32
+        - Type: IPV4
+          Value: 172.58.109.188/32
+        - Type: IPV4
+          Value: 172.58.110.155/32
+        - Type: IPV4
+          Value: 172.58.111.2/32
+        - Type: IPV4
+          Value: 172.58.111.156/32
+        - Type: IPV4
+          Value: 172.58.152.52/32
+        - Type: IPV4
+          Value: 172.58.153.56/32
+        - Type: IPV4
+          Value: 172.58.153.79/32
+        - Type: IPV4
+          Value: 172.58.153.206/32
+        - Type: IPV4
+          Value: 172.58.158.213/32
+        - Type: IPV4
+          Value: 172.58.172.120/32
+        - Type: IPV4
+          Value: 172.58.233.228/32
+        - Type: IPV4
+          Value: 172.101.235.212/32
+        - Type: IPV4
+          Value: 172.125.173.28/32
+        - Type: IPV4
+          Value: 172.250.92.54/32
+        - Type: IPV4
+          Value: 173.11.90.134/32
+        - Type: IPV4
+          Value: 173.14.216.60/32
+        - Type: IPV4
+          Value: 173.15.105.7/32
+        - Type: IPV4
+          Value: 173.16.142.232/32
+        - Type: IPV4
+          Value: 173.26.31.241/32
+        - Type: IPV4
+          Value: 173.28.189.88/32
+        - Type: IPV4
+          Value: 173.30.28.58/32
+        - Type: IPV4
+          Value: 173.80.221.44/32
+        - Type: IPV4
+          Value: 173.175.153.235/32
+        - Type: IPV4
+          Value: 173.216.121.155/32
+        - Type: IPV4
+          Value: 173.217.220.38/32
+        - Type: IPV4
+          Value: 173.252.87.2/32
+        - Type: IPV4
+          Value: 173.252.87.4/32
+        - Type: IPV4
+          Value: 173.252.87.7/32
+        - Type: IPV4
+          Value: 173.252.87.9/32
+        - Type: IPV4
+          Value: 173.252.87.14/31
+        - Type: IPV4
+          Value: 173.252.87.16/32
+        - Type: IPV4
+          Value: 173.252.95.1/32
+        - Type: IPV4
+          Value: 173.252.95.7/32
+        - Type: IPV4
+          Value: 173.252.95.11/32
+        - Type: IPV4
+          Value: 173.252.95.12/32
+        - Type: IPV4
+          Value: 173.252.95.14/32
+        - Type: IPV4
+          Value: 173.252.95.16/32
+        - Type: IPV4
+          Value: 173.252.95.19/32
+        - Type: IPV4
+          Value: 173.252.95.28/32
+        - Type: IPV4
+          Value: 173.252.95.31/32
+        - Type: IPV4
+          Value: 173.252.95.32/32
+        - Type: IPV4
+          Value: 174.18.143.253/32
+        - Type: IPV4
+          Value: 174.21.8.209/32
+        - Type: IPV4
+          Value: 174.23.132.180/32
+        - Type: IPV4
+          Value: 174.49.125.95/32
+        - Type: IPV4
+          Value: 174.56.93.182/32
+        - Type: IPV4
+          Value: 174.58.92.163/32
+        - Type: IPV4
+          Value: 174.59.24.81/32
+        - Type: IPV4
+          Value: 174.60.140.71/32
+        - Type: IPV4
+          Value: 174.69.20.72/32
+        - Type: IPV4
+          Value: 174.101.207.131/32
+        - Type: IPV4
+          Value: 174.103.147.236/32
+        - Type: IPV4
+          Value: 174.192.51.23/32
+        - Type: IPV4
+          Value: 174.193.128.66/32
+        - Type: IPV4
+          Value: 174.194.23.195/32
+        - Type: IPV4
+          Value: 174.194.34.224/32
+        - Type: IPV4
+          Value: 174.195.136.250/32
+        - Type: IPV4
+          Value: 174.195.144.55/32
+        - Type: IPV4
+          Value: 174.196.134.205/32
+        - Type: IPV4
+          Value: 174.196.145.32/32
+        - Type: IPV4
+          Value: 174.196.149.235/32
+        - Type: IPV4
+          Value: 174.198.7.114/32
+        - Type: IPV4
+          Value: 174.201.13.41/32
+        - Type: IPV4
+          Value: 174.202.2.99/32
+        - Type: IPV4
+          Value: 174.202.5.173/32
+        - Type: IPV4
+          Value: 174.206.8.156/32
+        - Type: IPV4
+          Value: 174.212.15.206/32
+        - Type: IPV4
+          Value: 174.212.17.192/32
+        - Type: IPV4
+          Value: 174.214.21.52/32
+        - Type: IPV4
+          Value: 174.215.43.74/32
+        - Type: IPV4
+          Value: 174.215.48.142/32
+        - Type: IPV4
+          Value: 174.218.137.127/32
+        - Type: IPV4
+          Value: 174.219.2.164/32
+        - Type: IPV4
+          Value: 174.222.0.162/32
+        - Type: IPV4
+          Value: 174.223.4.254/32
+        - Type: IPV4
+          Value: 174.226.15.6/32
+        - Type: IPV4
+          Value: 174.226.149.109/32
+        - Type: IPV4
+          Value: 174.228.132.17/32
+        - Type: IPV4
+          Value: 174.229.22.238/32
+        - Type: IPV4
+          Value: 174.230.10.150/32
+        - Type: IPV4
+          Value: 174.231.167.20/32
+        - Type: IPV4
+          Value: 174.232.34.38/32
+        - Type: IPV4
+          Value: 174.232.163.227/32
+        - Type: IPV4
+          Value: 174.232.170.219/32
+        - Type: IPV4
+          Value: 174.233.22.18/32
+        - Type: IPV4
+          Value: 174.234.161.30/32
+        - Type: IPV4
+          Value: 174.234.181.30/32
+        - Type: IPV4
+          Value: 174.242.35.150/32
+        - Type: IPV4
+          Value: 174.254.128.189/32
+        - Type: IPV4
+          Value: 174.255.203.14/32
+        - Type: IPV4
+          Value: 174.255.203.159/32
+        - Type: IPV4
+          Value: 184.56.215.172/32
+        - Type: IPV4
+          Value: 184.57.189.46/32
+        - Type: IPV4
+          Value: 184.187.134.60/32
+        - Type: IPV4
+          Value: 185.59.223.171/32
+        - Type: IPV4
+          Value: 185.89.216.162/32
+        - Type: IPV4
+          Value: 192.24.79.38/32
+        - Type: IPV4
+          Value: 192.73.242.31/32
+        - Type: IPV4
+          Value: 192.73.243.163/32
+        - Type: IPV4
+          Value: 192.73.252.162/32
+        - Type: IPV4
+          Value: 192.180.87.220/32
+        - Type: IPV4
+          Value: 192.223.7.254/32
+        - Type: IPV4
+          Value: 206.53.106.18/32
+        - Type: IPV4
+          Value: 206.169.162.216/32
+        - Type: IPV4
+          Value: 207.12.168.254/32
+        - Type: IPV4
+          Value: 207.144.176.234/32
+        - Type: IPV4
+          Value: 207.255.186.73/32
+        - Type: IPV4
+          Value: 207.255.214.79/32
+        - Type: IPV4
+          Value: 208.54.80.213/32
+        - Type: IPV4
+          Value: 208.89.171.214/32
+        - Type: IPV4
+          Value: 208.102.40.63/32
+        - Type: IPV4
+          Value: 208.180.239.27/32
+        - Type: IPV4
+          Value: 209.81.111.68/32
+        - Type: IPV4
+          Value: 209.208.97.166/32
+        - Type: IPV4
+          Value: 209.251.208.248/32
+        - Type: IPV4
+          Value: 209.251.208.250/32
+        - Type: IPV4
+          Value: 216.37.9.26/32
+        - Type: IPV4
+          Value: 216.185.36.26/32
+        - Type: IPV4
+          Value: 216.230.225.186/32
+      Name: IPSet
+    Type: AWS::WAF::IPSet
+  Rule:
+    Properties:
+      MetricName: exampleRule
+      Name: exampleRule
+      Predicates:
+        - DataId: !Ref 'IPSet0'
+          Negated: 'false'
+          Type: IPMatch
+    Type: AWS::WAF::Rule
+  exampleWebACL:
+    Properties:
+      DefaultAction:
+        Type: ALLOW
+      MetricName: exampleWebACL
+      Name: exampleWebACL
+      Rules:
+        - Action:
+            Type: COUNT
+          Priority: 1
+          RuleId: !Ref 'Rule'
+    Type: AWS::WAF::WebACL
+
